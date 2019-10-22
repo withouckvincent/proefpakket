@@ -18,5 +18,9 @@
 		<dt>Ondernemingsnummer</dt>
 		<dd th:text="*{ondernemingsNr}"></dd>
 	</dl>
+	<div th:if="${brouwer}!=null">
+		<a th:href="@{/brouwers/{id}/ondernemingsnr(id=${brouwer.id})}">Ondernemingsnummer
+			invullen</a>
+	</div>
 <body>
 </html>
